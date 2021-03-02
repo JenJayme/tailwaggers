@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa's Pampered Paws Pet Grooming | Book Appointment</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init('user_HwMXwEHp0KORxnvgNKatv');
+    })();
+  </script>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar-fixed">
+    <nav class="customNavbar" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo">
+          <img alt="Lisa's Pampered Paws" src="images/LPP-logo-horizontal.png" class="brand-logo" /> </a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li class="active"><a href="./book.html">Book Appointment</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul id="nav-mobile" class="sidenav">
+    <li><img alt="Lisa's Pampered Paws" src="images/LPP-logo-horizontal.png" class="small-logo sidenav-close"/> </a>
+    <li><a class="white-text" href="#">Home</a></li>
+    <li><a class="white-text" href="./services.html">Services</a></li>
+    <li><a class="white-text" href="./gallery.html">Gallery</a></li>
+    <li><a class="white-text active sidenav-close" href="./book.html">Book</a></li>
+    <li><a class="white-text" href="./about.html">About Us</a></li>
+  </ul>
+
+
+  <!-- BANNER IMAGE -->
+  <div id="index-banner" class="parallax-container">
+    <div id="buttonDiv"></div>
+
+    <div class="container">
+      <!-- <div class="section" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> -->
+      <h1 class="bookHead purple-text text-darken-3">Book A Date</h1>
+      <p class="bookSubhead light">We're open 7 days a week <br>from 7:00 a.m. until<br> the last pup goes home. <br><br>Just let us know a few details and <br>we'll call you personally to confirm.</p>
+      <!-- </div> -->
+    </div>
+
+    <!-- Modal Trigger -->
+    <a class="btn-small glow-on-hover modal-trigger" id="reqModalBtn" href="#formModal">Request Appointment</a>
+
+    <div class="parallax" id="bookBanner"><img src="images/friends.jpg" alt="person and dog relaxing looking at a lake">
+    </div>
+
+  </div>
+
+  <!-- FORM MODAL-->
+
+  <div class="container">
+
+    <div id="formModal" class="modal">
+      <div class="modal-content">
+        <h4>Request an Appointment</h4>
+        <p>We cannot guarantee your requested time but we'll try our best! <br>We typically respond within 2 hours.</p>
+
+        <form id="requestForm" method="post">
+
+          <div class="row">
+
+            <div class="input-field col l3 m6 s12">
+              <input id="firstName" type="text" class="validate" name="firstName">
+              <label for="firstName">First Name</label>
+            </div>
+
+            <div class="input-field col l3 m6 s12">
+              <input id="lastName" type="text" class="validate" name="lastName">
+              <label for="lastName">Last Name</label>
+            </div>
+
+            <div class="col l3 m6 s12">
+              <div class="input-field">
+                <input id="phone" type="text" class="validate" name="phone">
+                <label for="phone">Phone</label>
+              </div>
+            </div>
+
+            <div class="col l3 m6 s12">
+              <div class="input-field">
+                <input id="email" type="text" class="validate" name="email">
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <div class="col l3 m6 s12">
+
+              <div class="input-field">
+                <input id="petName" type="text" class="validate" name="petName">
+                <label for="petName">Pet's Name</label>
+              </div>
+
+            </div>
+
+            <div class="col l3 m6 s12">
+
+              <div class="input-field">
+                <select id="petType" name="petType">
+                  <option value="Dog (Small)">Dog (Small)</option>
+                  <option value="Dog (Medium)">Dog (Medium)</option>
+                  <option value="Dog (Large)">Dog (Large)</option>
+                  <option value="Dog (Extra Large or Giant)">Dog (Extra Large or Giant)</option>
+                  <option value="Cat">Cat</option>
+                  <option value="Other/Not Sure">Other/Not Sure</option>
+                </select>
+                <label for="petType">Pet Type</label>
+              </div>
+
+            </div>
+
+            <div class="col l3 m6 s12">
+
+              <div class="input-field">
+                <input id="reqTime" type="text" class="timepicker" name="reqTime">
+                <label for="reqTime">Requested Time</label>
+              </div>
+
+            </div>
+
+            <div class="col l3 m6 s12">
+
+              <div class="input-field">
+                <input id="reqDate" type="text" class="datepicker" setDefaultDate="true" name="reqDate">
+                <label for="reqDate">Requested Date(s)</label>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row center">
+            <button class="btn glow-on-hover modal-close" type="submit" name="action" id="submitBtn">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+
+      </form>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="page-footer pink darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l5 s12">
+          <h5 class="footerHead">About Our Business</h5>
+          <p class="grey-text text-lighten-4">We are a local family-owned business with fur babies of our own. With a
+            combined experience of over 30 years among our groomers, we're exceptional in providing the grooming your
+            pet requires and the love they deserve.<br><br> We're open for business now with extra precautions to
+            protect against the spread of COVID. Your support means the world to us.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="footerHead">Location</h5>
+          <h5 class="white-text">3689 Kings Row<br>Reno, NV 89503</h5>
+          <p>in the Viewcrest Shopping Center</p><br>
+          <hr>
+          <br>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.7436037517064!2d-119.85912964936611!3d39.54283767937565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809947e8ef32f0d7%3A0xabd0e6f628ac168f!2s3689%20Kings%20Row%2C%20Reno%2C%20NV%2089503!5e0!3m2!1sen!2sus!4v1601182026681!5m2!1sen!2sus"
+            width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="footerHead">Connect</h5>
+          <ul>
+            <li class="connect"><a class="white-text" href="tel:1-775-825-4254"><i
+                  class="material-icons connectIcon">phone</i><span class="connectTxt">(775) 825-4254</span></a></li>
+            <li class="connect"><a class="white-text connectTxt" href="mailto:lisaspppg@gmail.com"><i
+                  class="material-icons connectIcon">email</i> Email Us<span class="connectTxt"></span></a></li>
+            <li class="connect"><a class="white-text connectTxt"
+                href="https://www.facebook.com/Lisas-Pampered-Paws-Pet-Grooming-115065620131212"><i
+                  class="material-icons connectIcon">facebook</i><span class="connectTxt">Facebook</span></a></li>
+            <li class="connect"><a class="white-text connectTxt" href="#!"><img src="./images/instagram-icon.png"
+                  class="connectIcon" /> <span class="connectTxt">Instagram</span></a></li>
+            <li class="connect"><a class="white-text connectTxt"
+                href="https://www.yelp.com/biz/lisas-pampered-paws-pet-grooming-reno"><img src="images/yelp-icon.png"
+                  class="connectIcon" /> <span class="connectTxt">Yelp</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l1 s12">
+          <br>
+          <iframe border="0" frameborder="0" style="border: 0; height:110px; width:153px; color: whitesmoke" src="https://seal-utah.bbb.org/frame/blue-seal-153-100-bbb-90026507.png?chk=0806984D0F
+">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container purple-text text-lighten-1">
+        <a href="http://www.jaymedev.com"><img id="jaymedev-logo" alt="Designed & built by Jayme Development"
+            src="images/jaymedev-logo.png" /></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>
