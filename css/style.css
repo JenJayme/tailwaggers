@@ -16,8 +16,10 @@ body {
 
 nav ul a,
 nav .brand-logo {
+  top: 80px;
+  left: 20%;
   color: #38b6ff;
-  max-height: 12rem;
+  max-height: 40rem;
   width: auto;
   font-size: 1.4rem;
 }
