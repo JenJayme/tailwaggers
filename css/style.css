@@ -10,13 +10,13 @@
 
 body {
   width: 100%;
-  background-color: rgb(248, 199, 207);
+  background-color: white;
   font-size: 1.4rem;
 }
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: #38b6ff;
   max-height: 12rem;
   width: auto;
   font-size: 1.4rem;
@@ -120,7 +120,7 @@ nav .brand-logo {
 
 .customNavbar {
   /* background-color: rgba(255, 255, 255, .2); */
-  background-color: rgb(248, 199, 207);
+  background-color: rgba(0, 0, 0, .70);
 }
 
 #doodleImg {
@@ -133,7 +133,7 @@ p {
 
 a:hover {
   box-shadow: rgba(255, 255, 255, .7);
-  color: rgb(218, 80, 218);
+  color: rgb(230, 7, 7);
 }
 
 .effect {
@@ -228,11 +228,11 @@ a:hover {
 }
 
 .footerHead {
-  color: pink
+  color: #696262
 }
 
 .footerLink {
-  color: rgb(221, 142, 221);
+  color: #7272e6;
   text-decoration: underline;
   text-shadow: #444;
 }
@@ -304,7 +304,7 @@ a:hover {
   top: 0;
   border-radius: 10px;
   color: #fff;
-  background-color: purple;
+  background-color: #7272e6;
 }
 
 @keyframes glowing {
@@ -371,11 +371,11 @@ a:hover {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: white;
 }
 
 .sidenav {
-  background-color: #978083;
+  background-color: #38b6ff;
 }
 
 .sidenav:li {
