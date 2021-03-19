@@ -102,7 +102,9 @@ nav .brand-logo img {
 
 .centerQuote {
   margin-bottom: -10px;
-  background-color: rgba(214, 150, 124, .3);
+  /* background-color: rgba(214, 150, 124, .3); */
+  background-color: #424242;
+  color: white;
 }
 
 .connect {
@@ -177,6 +179,7 @@ a:hover {
   font-size: 1.2em;
   line-height: 2;
   letter-spacing: 0.04em;
+  color: #38b6ff;
 }
 
 
@@ -254,7 +257,8 @@ a:hover {
 }
 
 .footerHead {
-  color: #696262
+  /* color: #696262 */
+  color: #38b6ff
 }
 
 .footerLink {
@@ -451,11 +455,17 @@ a:hover {
   height: auto;
 }
 
-footer.page-footer {
+footer {
   margin: 0;
   width: 100%;
   position: absolute;
   left: 0;
+}
+
+#footerContainer {
+  margin: 0;
+  padding: 10px 10px 10px 40px;
+  width: 100vw;
 }
 
 .services {
