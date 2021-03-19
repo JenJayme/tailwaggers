@@ -1,3 +1,4 @@
+
 const activeVintalight = container => {
     // Delegación de eventos para detectar click en los hijos
     container.addEventListener("click", e => {

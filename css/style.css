@@ -21,10 +21,18 @@ nav ul a {
   font-size: 1.2rem;
 }
 
-nav .brand-logo img {
-  top: 10px;
+/* nav .brand-logo img {
   height: 15rem;
-  left: 0;
+  top: 20px;
+  left: 50px;
+} */
+
+#logo {
+  margin-top: 20px;
+  margin-left: 40px;
+  height: 15rem;
+  left: 50px;
+  transition: 2s ease;
 }
 
 #aboutDiasCont {
@@ -347,7 +355,7 @@ a:hover {
 
 .hello {
   margin-top: 20%;
-  padding-left: 70%;
+  padding-left: 20%;
 }
 
 #huskyImg #yorkieImg {
@@ -966,6 +974,7 @@ footer {
   top: 20%;
   }
 
+  /* not sure if this class is still used  */
   .header {
     margin-top: 20%;
     padding-top: 85%;
@@ -1017,7 +1026,7 @@ footer {
 
   .hello {
     margin-top: 175%;
-    text-align: center;
+    text-align: left;
     padding-left: 0%;
     padding-bottom: 5%;
   }

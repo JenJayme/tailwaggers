@@ -1,6 +1,17 @@
 var submitBtn = $('#submitBtn');
 var reqForm = $('#requestForm');
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo").style.height = "10rem";
+    console.log("scroll function working")
+  } else {
+    document.getElementById("logo").style.height = "15rem";
+  }
+}
+
 function getInputs() {
   'use strict';
   var input, firstName, lastName, petName, petType, phone, email, date, time;
