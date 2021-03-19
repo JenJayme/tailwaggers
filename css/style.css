@@ -16,10 +16,10 @@ body {
 
 nav ul a,
 nav .brand-logo {
-  top: 80px;
-  left: 20%;
+  top: 10px;
+  left: 0;
   color: #38b6ff;
-  max-height: 40rem;
+  height: 15rem;
   width: auto;
   font-size: 1.4rem;
 }
@@ -123,6 +123,7 @@ nav .brand-logo {
 .customNavbar {
   /* background-color: rgba(255, 255, 255, .2); */
   background-color: rgba(0, 0, 0, .70);
+  /* background-color: transparent; */
 }
 
 #doodleImg {
@@ -391,7 +392,7 @@ a:hover {
 
 .parallax-container {
   width: 100%;
-  min-height: 900px;
+  min-height: 100vh;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
