@@ -50,15 +50,6 @@ $(document).ready(function(){
 
     AOS.init();
     
-    // submitBtn.on('click', function (event) {
-    //   event.preventDefault();
-    //   var input = getInputs();
-    //   // generate a five digit number for the contact_number variable
-    //   // this.contact_number.value = Math.random() * 100000 | 0;
-    //   // these IDs from the previous steps
-    //   emailjs.sendForm('contact_service', 'contact_form', this);
-    // })    
-
     reqForm.on('submit', function (event) {
       event.preventDefault();
       alert("Your message is being sent!");
