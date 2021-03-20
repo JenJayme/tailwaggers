@@ -275,6 +275,10 @@ a:hover {
   color: #38b6ff
 }
 
+footer ul {
+  font-size: smaller;
+}
+
 .footerLink {
   color: #7272e6;
   text-decoration: underline;
@@ -361,7 +365,6 @@ a:hover {
 }
 
 .galleryHeader {
-  /* position: relative; */
   margin-left: 300px;
 }
 
@@ -395,14 +398,17 @@ a:hover {
 }
 
 .lowQuote {
-  margin-top: 60%;
-  padding: 20px;
+  margin-top: 20%;
+  padding: 30px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(0, 0, 0, .2);
 }
 
 .lowQuote:hover {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(0, 0, 0, .7);
+  padding: 20px;
+  margin-left: -20px;
+  color: white;
   transition: 2s ease;
 }
 
@@ -439,6 +445,10 @@ a:hover {
   background-size: cover; 
   padding-bottom: 20px;
   float: none;
+}
+
+.picker__box, .picker__date-display, .picker__weekday-display, .picker__time-display  {
+  background-color: #38b6ff !important;
 }
 
 .sidenav-trigger {
