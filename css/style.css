@@ -14,6 +14,10 @@ body {
   font-size: 1.4rem;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #38b6ff;
+}
+
 nav ul a {
   top: 10px;
   color: #38b6ff;
@@ -370,10 +374,19 @@ a:hover {
 .leftQuote {
   text-align: left;
   padding-right: 30%;
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .lowQuote {
   margin-top: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.lowQuote:hover {
+  background-color: rgba(255, 255, 255, .7);
+  transition: 2s ease;
 }
 
 .rightQuote {
@@ -478,8 +491,8 @@ footer {
 
 .services {
   position: relative;
-  margin-top: 25%;
-  left: 65%;
+  margin-top: 20px;
+  left: 75px;
 }
 
 .small-logo {
@@ -992,7 +1005,9 @@ footer {
   }
 
   .subhead {
-    margin-top: -25px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 200px;
   }
 
   .services {
