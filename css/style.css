@@ -94,9 +94,11 @@ nav ul a {
   margin-top: 15%;
 }
 
-.bookSubhead {
+.subhead {
   position: relative;
   margin-left: -10%;
+  padding: 5px;
+  margin-right: 75%;
   font-size: 1.8rem;
   left: 0;
 }
@@ -105,7 +107,7 @@ nav ul a {
   position: relative;
   left: 0;
   margin-left: 8%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #cavalierImg {
@@ -348,6 +350,21 @@ a:hover {
   color: #fff;
   background-color: #38b6ff;
 }
+
+.header {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 75px;
+  margin-left: 75px;
+  left: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, .7);
+}
+
+.galleryHeader {
+  /* position: relative; */
+  margin-left: 300px;
+}
+
 
 @keyframes glowing {
   0% { background-position: 0 0; }
@@ -1004,29 +1021,19 @@ footer {
     margin: 0;
   }
 
-  .subhead {
-    position: relative;
-    margin-top: 0;
-    margin-left: 200px;
+  #serviceSubhead {
+    padding-left: 75px !important;
+    left: 75px !important;
+    margin-left: 75px !important;
   }
 
-  .services {
-    font-size: 4rem;
-    position: relative;
-    margin-top: 10%;
-    left: 0;
-  }  
-
   .bookHead {
-    position: absolute;
-    font-size: 4rem;
-    top: 0;
+    position: relative;
     left: 75px;
-    margin-top: 20px;
     text-align: center;
   }
 
-  .bookSubhead {
+  .subhead {
     position: relative;
     font-size: 1.8rem;
     left: 0;
