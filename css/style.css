@@ -18,6 +18,17 @@ h1, h2, h3, h4, h5 {
   color: #38b6ff;
 }
 
+h1 {
+  -webkit-text-stroke: 1px #38b6ff;
+  color: white;
+  text-shadow:
+      3px 3px 10px #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
 nav ul a {
   top: 10px;
   color: #38b6ff;
@@ -25,11 +36,10 @@ nav ul a {
   font-size: 1.2rem;
 }
 
-/* nav .brand-logo img {
-  height: 15rem;
-  top: 20px;
-  left: 50px;
-} */
+.active {
+  font-size: 1.6;
+  color: yellow;
+}
 
 #logo {
   margin-top: 20px;
@@ -421,6 +431,16 @@ footer ul {
   text-align: right;
 }
 
+.middleQuote {
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-top: 20vh;
+  margin-right: 60%;
+  margin-left: -10%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
 #muttImg {
   size: 70%;
 }
@@ -481,9 +501,8 @@ footer ul {
   }
 
 .wordBand {
-  padding-top: 20px;
-  padding-bottom: 80px;
-  margin-bottom: 3vh;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
  
 .wordBand2 {

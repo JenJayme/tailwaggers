@@ -61,8 +61,9 @@ $(document).ready(function(){
 
     reqForm.on('submit', function (event) {
       event.preventDefault();
+      alert("Your message is being sent!");
       var input = getInputs();
-      emailjs.sendForm('contact_service', 'contact_form', this);
+      emailjs.sendForm('contact_service', 'tailwaggersForm', this);
     })
 
   }); // end of document ready
