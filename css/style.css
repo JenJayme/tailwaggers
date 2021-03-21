@@ -548,10 +548,11 @@ footer {
 
 .small-logo {
   position: relative;
-  top: 5%;
-  margin-left: 5%;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
   margin: auto;
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 
@@ -1026,16 +1027,22 @@ footer {
     margin-top: 20%;
     font-size: 2rem;
   }
+
+  #logo {
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: -180px;
+    padding-bottom: 20px;
+    height: 180px;
+    width: auto;
+  }
+  
 }
 
 @media only screen and (max-width : 500px) {
   
   #index-banner .section {
     top: 10%;
-  }
-
- .brand-logo {
-  top: 20%;
   }
 
   /* not sure if this class is still used  */
@@ -1047,11 +1054,6 @@ footer {
   }
 
   .rightQuote {
-    color: #38b6ff;
-    padding-top: 70%;
-    padding-left: 3%;
-    padding-right: 3%;
-    text-align: center;
     margin: 0;
   }
 
