@@ -1055,6 +1055,7 @@ footer {
 
   .rightQuote {
     margin: 0;
+    text-align: center;
   }
 
   #serviceSubhead {
