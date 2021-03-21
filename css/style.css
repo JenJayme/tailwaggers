@@ -484,6 +484,11 @@ footer ul {
   border-bottom: white;
 }
 
+.parallax img {
+  object-fit: cover;
+  transform: scale(.5);
+}
+
 .parallax-image {
   position: top;
 }
