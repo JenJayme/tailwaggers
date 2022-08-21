@@ -72,6 +72,15 @@ nav ul a {
   min-height: 100%;
 }
 
+.bold-on-hover:before {
+  font-weight:400;
+}
+
+.bold-on-hover:after {
+  font-weight: bold;
+  color: #002bff;
+}
+
 #BBB-badge {
   margin-top: 1.5rem;
 }
